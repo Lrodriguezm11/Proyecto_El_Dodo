@@ -16,20 +16,26 @@ header {
     background-color: #333;
     color: white;
     padding: 10px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
-header h1 {
-    margin: 0;
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
-nav {
-    margin-top: 10px;
+/* Navegación de la izquierda */
+.nav-left {
+    display: flex;
+    gap: 15px;
 }
 
 nav a {
     color: white;
     text-decoration: none;
-    margin: 0 15px;
     font-weight: bold;
 }
 
@@ -37,40 +43,107 @@ nav a:hover {
     text-decoration: underline;
 }
 
-/* Main Sections */
-main {
-    padding: 20px 0;
-}
-
-.rooms {
-    background-color: #f4f4f4;
-    padding: 20px 0;
-}
-
-.rooms h2 {
+/* Contenedor del título */
+header h1 {
+    margin: 0;
     text-align: center;
+    flex-grow: 1;
 }
 
-.room {
+/* Navegación de la derecha */
+.nav-right {
     display: flex;
     align-items: center;
-    margin: 20px 0;
-    padding: 10px;
-    border: 1px solid #ddd;
+    gap: 20px;
+}
+
+/* Menú del usuario con flechita */
+.user-menu {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+}
+
+.welcome-message {
+    font-weight: bold;
+}
+
+.arrow {
+    margin-left: 10px;
+    font-size: 16px;
+    vertical-align: middle;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    box-shadow: 0px 8px 16px rgba(0,0,0,0.2);
+    right: 0;
+    min-width: 150px;
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: #ddd;
+}
+
+/* Mostrar el menú cuando se hace clic */
+.user-menu.show .dropdown-content {
+    display: block;
+}
+
+/* Botón de cerrar sesión */
+.logout-button {
+    background-color: #e74c3c;
+    color: white;
+    border: none;
+    padding: 8px 15px;
+    cursor: pointer;
     border-radius: 5px;
-    background-color: white;
 }
 
-.room img {
-    max-width: 200px;
-    margin-right: 20px;
-    border-radius: 5px;
+.logout-button:hover {
+    background-color: #c0392b;
 }
 
-.room h3 {
-    margin: 0;
+/* Sección de bienvenida */
+.welcome-section {
+    text-align: center;
+    padding: 20px 0;
 }
 
+.welcome-img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+/* Sección de Enlaces */
+.link-section {
+    text-align: center;
+    margin: 40px 0;
+}
+
+.big-link {
+    font-size: 2rem;
+    font-weight: bold;
+    text-decoration: none;
+    color: #333;
+}
+
+.big-link:hover {
+    color: #555;
+}
+
+/* Sección de Reservas */
 .reservations {
     text-align: center;
     padding: 20px 0;

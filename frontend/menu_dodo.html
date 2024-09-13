@@ -8,46 +8,60 @@
 </head>
 <body>
     <header>
-        <div class="container">
-            <h1>Hotel El Dodo</h1>
-            <nav>
-                <a href="#rooms">Habitaciones</a>
-                <a href="#reservations">Reservas</a>
+        <div class="container header-container">
+            <!-- Menú del lado izquierdo -->
+            <nav class="nav-left">
+                <a href="#roomsLink">Habitaciones</a>
+                <a href="#services">Servicios</a>
+                <a href="#reservationsLink">Reservas</a>
+                <a href="#packagesLink">Paquetes</a>
             </nav>
-            <!-- Sección de bienvenida -->
-            <div id="welcomeMessage" class="welcome-message">
-                <!-- El mensaje de bienvenida se actualizará con JavaScript -->
+
+            <!-- Título del centro -->
+            <h1>Hotel El Dodo</h1>
+
+            <!-- Bienvenida, flechita y cerrar sesión del lado derecho -->
+            <div class="nav-right">
+                <div class="user-menu">
+                    <span id="welcomeMessage" class="welcome-message">Bienvenido, Usuario</span>
+                    <span id="arrow" class="arrow">&#9662;</span> <!-- Flechita hacia abajo -->
+                    <div id="dropdownMenu" class="dropdown-content">
+                        <a href="#miCuenta">Mi cuenta</a>
+                        <a href="#misReservaciones">Mis reservaciones</a>
+                        <a href="#opciones">Opciones</a>
+                    </div>
+                </div>
+                <button id="logoutButton" class="logout-button">Cerrar Sesión</button>
             </div>
-            <!-- Botón de cerrar sesión -->
-            <button id="logoutButton" class="logout-button">Cerrar Sesión</button>
         </div>
     </header>
 
     <main>
-        <section id="rooms" class="rooms">
+        <!-- Imagen de bienvenida -->
+        <section class="welcome-section">
             <div class="container">
-                <h2>Habitaciones</h2>
-                <div class="room">
-                    <img src="room1.jpg" alt="Habitación Deluxe">
-                    <h3>Habitación Deluxe</h3>
-                    <p>Una habitación lujosa con todas las comodidades modernas.</p>
-                </div>
-                <div class="room">
-                    <img src="room2.jpg" alt="Habitación Estándar">
-                    <h3>Habitación Estándar</h3>
-                    <p>Una habitación cómoda y acogedora para su estadía.</p>
-                </div>
-                <div class="room">
-                    <img src="room3.jpg" alt="Suite Presidencial">
-                    <h3>Suite Presidencial</h3>
-                    <p>La suite más exclusiva con vistas espectaculares y lujo sin igual.</p>
-                </div>
+                <img src="welcome.jpg" alt="Bienvenido al Hotel El Dodo" class="welcome-img">
             </div>
         </section>
 
-        <section id="reservations" class="reservations">
+        <!-- Enlace a Habitaciones -->
+        <section id="roomsLink" class="link-section">
             <div class="container">
-                <h2>Realizar una Reserva</h2>
+                <a href="habitaciones.html" class="big-link">Nuestras Habitaciones</a>
+            </div>
+        </section>
+
+        <!-- Enlace a Paquetes -->
+        <section id="packagesLink" class="link-section">
+            <div class="container">
+                <a href="paquetes.html" class="big-link">Nuestros Paquetes</a>
+            </div>
+        </section>
+
+        <!-- Realizar Reserva -->
+        <section id="reservationsLink" class="reservations">
+            <div class="container">
+                <h2>Reserva Ahora</h2>
                 <button id="reserveButton">Reserva Ahora</button>
             </div>
         </section>

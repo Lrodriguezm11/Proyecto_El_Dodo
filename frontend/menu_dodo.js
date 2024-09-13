@@ -25,4 +25,11 @@ document.addEventListener('DOMContentLoaded', () => {
         // Redirigir al inicio de sesión
         window.location.href = 'index.html';
     });
+
+    // Toggle del menú desplegable cuando se hace clic en la flechita
+document.getElementById("arrow").addEventListener("click", function() {
+    const userMenu = document.querySelector(".user-menu");
+    userMenu.classList.toggle("show");
+});
+
 });
