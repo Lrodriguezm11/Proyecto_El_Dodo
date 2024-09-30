@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Habitaciones - Hotel El Dodo</title>
+    <link rel="stylesheet" href="css/habitaciones_dodo.css">
+</head>
+<body>
+    <header>
+        <div class="container header-container">
+            <nav class="nav-left">
+                <a href="menu_dodo.html">Inicio</a>
+                <a href="habitaciones.html">Habitaciones</a>
+                <a href="servicios.html">Servicios</a>
+                <a href="paquetes.html">Paquetes</a>
+            </nav>
+            <h1>Hotel El Dodo</h1>
+            <div class="nav-right">
+                <div class="user-menu">
+                    <span id="welcomeMessage" class="welcome-message">Bienvenido, Usuario</span>
+                    <span id="arrow" class="arrow">&#9662;</span>
+                    <div id="dropdownMenu" class="dropdown-content">
+                        <a href="#miCuenta">Mi cuenta</a>
+                        <a href="#misReservaciones">Mis reservaciones</a>
+                        <a href="#opciones">Opciones</a>
+                    </div>
+                </div>
+                <button id="logoutButton" class="logout-button">Cerrar Sesión</button>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="rooms-section">
+            <div class="container">
+                <h2>Nuestras Habitaciones</h2>
+                <div class="room">
+                    <img src="room1.jpg" alt="Habitación Estándar" class="room-img">
+                    <div class="room-info">
+                        <h3>Habitación Estándar</h3>
+                        <p>Descripción de la habitación estándar. Incluye servicios básicos como Wi-Fi, aire acondicionado, y más.</p>
+                        <p><strong>Precio: $100 por noche</strong></p>
+                        <button class="reserve-btn" data-room="estandar">Reservar</button>
+                    </div>
+                </div>
+                <div class="room">
+                    <img src="room2.jpg" alt="Habitación Deluxe" class="room-img">
+                    <div class="room-info">
+                        <h3>Habitación Deluxe</h3>
+                        <p>Descripción de la habitación deluxe. Ofrece vistas al mar, bañera de hidromasaje, y otros servicios premium.</p>
+                        <p><strong>Precio: $200 por noche</strong></p>
+                        <button class="reserve-btn" data-room="deluxe">Reservar</button>
+                    </div>
+                </div>
+                <div class="room">
+                    <img src="room3.jpg" alt="Suite" class="room-img">
+                    <div class="room-info">
+                        <h3>Suite</h3>
+                        <p>Descripción de la suite. Ideal para largas estancias con servicios de lujo como sala de estar y cocina equipada.</p>
+                        <p><strong>Precio: $350 por noche</strong></p>
+                        <button class="reserve-btn" data-room="suite">Reservar</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Hotel El Dodo. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <script src="scripts/habitaciones_dodo.js"></script> <!-- Enlace al archivo de script -->
+</body>
+</html>

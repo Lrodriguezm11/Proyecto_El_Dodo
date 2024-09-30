@@ -114,53 +114,42 @@ header h1 {
     background-color: #c0392b;
 }
 
-/* Sección de bienvenida */
-.welcome-section {
+/* Sección de servicios */
+.services-section {
+    padding: 40px 0;
     text-align: center;
-    padding: 20px 0;
 }
 
-.welcome-img {
-    max-width: 100%;
-    height: auto;
+.services-section h2 {
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+}
+
+.service {
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.service-img {
+    width: 150px;
+    height: 150px;
     border-radius: 10px;
+    margin-right: 20px;
 }
 
-/* Sección de Enlaces */
-.link-section {
-    text-align: center;
-    margin: 40px 0;
+.service-info {
+    text-align: left;
 }
 
-.big-link {
-    font-size: 2rem;
-    font-weight: bold;
-    text-decoration: none;
-    color: #333;
+.service-info h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
 }
 
-.big-link:hover {
+.service-info p {
+    margin: 0;
     color: #555;
-}
-
-/* Sección de Reservas */
-.reservations {
-    text-align: center;
-    padding: 20px 0;
-}
-
-#reserveButton {
-    background-color: #333;
-    color: white;
-    border: none;
-    padding: 10px 20px;
-    font-size: 16px;
-    cursor: pointer;
-    border-radius: 5px;
-}
-
-#reserveButton:hover {
-    background-color: #555;
 }
 
 /* Footer */
