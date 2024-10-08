@@ -22,7 +22,7 @@
                     <span id="arrow" class="arrow">&#9662;</span>
                     <div id="dropdownMenu" class="dropdown-content">
                         <a href="#miCuenta">Mi cuenta</a>
-                        <a href="#misReservaciones">Mis reservaciones</a>
+                        <a href="mis_reservas.html">Mis reservaciones</a>
                         <a href="#opciones">Opciones</a>
                     </div>
                 </div>
@@ -31,40 +31,42 @@
         </div>
     </header>
 
-    <main>
-        <section class="rooms-section">
-            <div class="container">
-                <h2>Nuestras Habitaciones</h2>
-                <div class="room">
-                    <img src="room1.jpg" alt="Habitación Estándar" class="room-img">
-                    <div class="room-info">
-                        <h3>Habitación Estándar</h3>
-                        <p>Descripción de la habitación estándar. Incluye servicios básicos como Wi-Fi, aire acondicionado, y más.</p>
-                        <p><strong>Precio: $100 por noche</strong></p>
-                        <button class="reserve-btn" data-room="estandar">Reservar</button>
-                    </div>
-                </div>
-                <div class="room">
-                    <img src="room2.jpg" alt="Habitación Deluxe" class="room-img">
-                    <div class="room-info">
-                        <h3>Habitación Deluxe</h3>
-                        <p>Descripción de la habitación deluxe. Ofrece vistas al mar, bañera de hidromasaje, y otros servicios premium.</p>
-                        <p><strong>Precio: $200 por noche</strong></p>
-                        <button class="reserve-btn" data-room="deluxe">Reservar</button>
-                    </div>
-                </div>
-                <div class="room">
-                    <img src="room3.jpg" alt="Suite" class="room-img">
-                    <div class="room-info">
-                        <h3>Suite</h3>
-                        <p>Descripción de la suite. Ideal para largas estancias con servicios de lujo como sala de estar y cocina equipada.</p>
-                        <p><strong>Precio: $350 por noche</strong></p>
-                        <button class="reserve-btn" data-room="suite">Reservar</button>
-                    </div>
+    <!-- HTML Modificado para los Botones de Reserva -->
+<main>
+    <section class="rooms-section">
+        <div class="container">
+            <h2>Nuestras Habitaciones</h2>
+            <div class="room">
+                <img src="room1.jpg" alt="Habitación Estándar" class="room-img">
+                <div class="room-info">
+                    <h3>Habitación Estándar</h3>
+                    <p>Descripción de la habitación estándar. Incluye servicios básicos como Wi-Fi, aire acondicionado, y más.</p>
+                    <p><strong>Precio: $19.99 por noche</strong></p>
+                    <button onclick="window.location.href='reservas.html?room=estandar'">Reservar</button>
                 </div>
             </div>
-        </section>
-    </main>
+            <div class="room">
+                <img src="room2.jpg" alt="Habitación Deluxe" class="room-img">
+                <div class="room-info">
+                    <h3>Habitación Deluxe</h3>
+                    <p>Descripción de la habitación deluxe. Ofrece vistas al mar, bañera de hidromasaje, y otros servicios premium.</p>
+                    <p><strong>Precio: $29.99 por noche</strong></p>
+                    <button onclick="window.location.href='reservas.html?room=deluxe'">Reservar</button>
+                </div>
+            </div>
+            <div class="room">
+                <img src="room3.jpg" alt="Suite" class="room-img">
+                <div class="room-info">
+                    <h3>Suite</h3>
+                    <p>Descripción de la suite. Ideal para largas estancias con servicios de lujo como sala de estar y cocina equipada.</p>
+                    <p><strong>Precio: $49.99 por noche</strong></p>
+                    <button onclick="window.location.href='reservas.html?room=suite'">Reservar</button>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
+
 
     <footer>
         <div class="container">

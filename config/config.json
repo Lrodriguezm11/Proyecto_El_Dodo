@@ -1,9 +1,9 @@
 {
   "development": {
-    "username": "admin",
-    "password": "Chipilin*1523",
-    "database": "DODO",
-    "host": "dodo.ch2a2aggs9w6.us-east-1.rds.amazonaws.com",
+    "username": "DODO",
+    "password": "1234",
+    "database": "xe",
+    "host": "localhost",
     "dialect": "oracle"
   },
   "test": {

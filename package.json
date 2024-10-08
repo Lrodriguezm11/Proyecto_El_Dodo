@@ -21,6 +21,7 @@
     "passport-jwt": "^4.0.1",
     "passport-local": "^1.0.0",
     "proyecto-hotel": "file:",
+    "sequelize": "^6.37.4",
     "sequelize-oracle": "^3.3.2-0.0"
   },
   "devDependencies": {
