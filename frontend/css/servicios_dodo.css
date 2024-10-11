@@ -7,7 +7,7 @@ body {
 }
 
 .container {
-    width: 80%;
+    width: 90%;
     margin: 0 auto;
 }
 
@@ -125,37 +125,64 @@ header h1 {
     margin-bottom: 30px;
 }
 
-.service {
-    display: flex;
-    align-items: center;
-    margin-bottom: 30px;
+/* Grid de servicios */
+.services-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); /* Ajuste del tamaño de las columnas */
+    gap: 20px;  /* Espacio entre las tarjetas */
+    justify-items: center;
 }
 
-.service-img {
-    width: 150px;
-    height: 150px;
+/* Tarjeta de servicio */
+.service-card {
+    background-color: white;
     border-radius: 10px;
-    margin-right: 20px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    width: 100%;
+    max-width: 300px; /* Limitar el tamaño máximo de la tarjeta */
+    text-align: left;
+}
+
+.service-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+/* Ajuste de las imágenes */
+.service-img {
+    width: 100%;
+    height: auto;  /* Cambiar para que mantenga la proporción */
+    max-height: 200px; /* Limitar la altura para que no se haga demasiado grande */
+    object-fit: cover; /* Asegurarse de que la imagen se ajuste sin distorsión */
 }
 
 .service-info {
-    text-align: left;
+    padding: 15px;
 }
 
 .service-info h3 {
     font-size: 1.5rem;
     margin-bottom: 10px;
+    color: #333;
 }
 
 .service-info p {
-    margin: 0;
+    margin: 10px 0;
     color: #555;
+    font-size: 1rem;
+}
+
+.service-info .price {
+    font-weight: bold;
+    color: #e74c3c;
 }
 
 /* Footer */
 footer {
     background-color: #333;
     color: white;
-    padding: 10px 0;
+    padding: 20px 0;
     text-align: center;
 }

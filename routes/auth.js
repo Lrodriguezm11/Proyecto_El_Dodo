@@ -9,7 +9,14 @@ router.post('/signin', async(req, res, next) =>{
     passport.authenticate('local', { session: false}, function (err, user, info) {
         if (err) return res.status(500).json(err);
         if (!user) return res.status(400).json(info);
-        const token = jwt.sign(user, process.env.SECRET_KEY, { expiresIn: '1h'});
+        
+        // Incluir el rol en el token JWT
+        const token = jwt.sign({
+            id: user.id,
+            nombre_usuario: user.nombre_usuario,
+            rol: user.rol  // Asegúrate de que este campo esté presente en el objeto `user`
+        }, process.env.SECRET_KEY, { expiresIn: '1h' });
+
         return res.status(200).json({
             token, expiresIn: 3600, user
         });

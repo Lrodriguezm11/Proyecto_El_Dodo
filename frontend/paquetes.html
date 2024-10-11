@@ -18,15 +18,20 @@
             <h1>Hotel El Dodo</h1>
             <div class="nav-right">
                 <div class="user-menu">
-                    <span id="welcomeMessage" class="welcome-message">Bienvenido, Usuario</span>
-                    <span id="arrow" class="arrow">&#9662;</span>
+                    <!-- Mensaje de bienvenida dinámico (oculto si no hay sesión iniciada) -->
+                    <span id="welcomeMessage" class="welcome-message"></span>
+                    <span id="arrow" class="arrow" style="display:none;">&#9662;</span> <!-- Flechita oculta por defecto -->
                     <div id="dropdownMenu" class="dropdown-content">
                         <a href="#miCuenta">Mi cuenta</a>
                         <a href="mis_reservas.html">Mis reservaciones</a>
                         <a href="#opciones">Opciones</a>
                     </div>
                 </div>
-                <button id="logoutButton" class="logout-button">Cerrar Sesión</button>
+                <!-- Botón de iniciar sesión (visible si no hay usuario logueado) -->
+                <button id="loginButton" class="login-button" onclick="window.location.href='index.html'">Iniciar Sesión</button>
+
+                <!-- Botón de cerrar sesión (visible solo cuando se ha iniciado sesión) -->
+                <button id="logoutButton" class="logout-button" style="display:none;">Cerrar Sesión</button>
             </div>
         </div>
     </header>

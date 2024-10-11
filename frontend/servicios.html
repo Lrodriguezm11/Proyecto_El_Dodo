@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Servicios - Hotel El Dodo</title>
-    <link rel="stylesheet" href="css/servicios_dodo.css">
+    <title>Servicios Adicionales - Hotel El Dodo</title>
+    <link rel="stylesheet" href="css/servicios_dodo.css"> <!-- Asegúrate de enlazar la hoja de estilos correcta -->
 </head>
 <body>
     <header>
@@ -18,114 +18,30 @@
             <h1>Hotel El Dodo</h1>
             <div class="nav-right">
                 <div class="user-menu">
-                    <span id="welcomeMessage" class="welcome-message">Bienvenido, Usuario</span>
-                    <span id="arrow" class="arrow">&#9662;</span>
+                    <!-- Mensaje de bienvenida dinámico (oculto si no hay sesión iniciada) -->
+                    <span id="welcomeMessage" class="welcome-message"></span>
+                    <span id="arrow" class="arrow" style="display:none;">&#9662;</span> <!-- Flechita oculta por defecto -->
                     <div id="dropdownMenu" class="dropdown-content">
                         <a href="#miCuenta">Mi cuenta</a>
                         <a href="mis_reservas.html">Mis reservaciones</a>
                         <a href="#opciones">Opciones</a>
                     </div>
                 </div>
-                <button id="logoutButton" class="logout-button">Cerrar Sesión</button>
+                <!-- Botón de iniciar sesión (visible si no hay usuario logueado) -->
+                <button id="loginButton" class="login-button" onclick="window.location.href='index.html'">Iniciar Sesión</button>
+
+                <!-- Botón de cerrar sesión (visible solo cuando se ha iniciado sesión) -->
+                <button id="logoutButton" class="logout-button" style="display:none;">Cerrar Sesión</button>
             </div>
         </div>
     </header>
 
+    <!-- Sección para los servicios adicionales -->
     <main>
-        <section class="services-section">
+        <section class="services-section"> <!-- Cambié 'rooms-section' por 'services-section' -->
             <div class="container">
-                <h2>Nuestros Servicios</h2>
-
-                <!-- Servicio Piscina -->
-                <div class="service">
-                    <img src="piscina.jpg" alt="Piscina" class="service-img">
-                    <div class="service-info">
-                        <h3>Piscina</h3>
-                        <p>Disfruta de nuestra amplia piscina al aire libre, perfecta para un refrescante chapuzón.</p>
-                        <p><strong>Precio: $5 por día</strong></p>
-                    </div>
-                </div>
-
-                <!-- Servicio Jacuzzi -->
-                <div class="service">
-                    <img src="jacuzzi.jpg" alt="Jacuzzi" class="service-img">
-                    <div class="service-info">
-                        <h3>Jacuzzi</h3>
-                        <p>Relájate en nuestro jacuzzi, ideal para liberar tensiones y disfrutar de un momento de tranquilidad.</p>
-                        <p><strong>Precio: $5 por día</strong></p>
-                    </div>
-                </div>
-
-                <!-- Servicio Sauna -->
-                <div class="service">
-                    <img src="sauna.jpg" alt="Sauna" class="service-img">
-                    <div class="service-info">
-                        <h3>Sauna</h3>
-                        <p>Revitaliza tu cuerpo y mente en nuestra sauna, un espacio perfecto para desintoxicarte y relajarte.</p>
-                        <p><strong>Precio: $10 por día</strong></p>
-                    </div>
-                </div>
-
-                <!-- Servicio Restaurante -->
-                <div class="service">
-                    <img src="restaurante.jpg" alt="Restaurante" class="service-img">
-                    <div class="service-info">
-                        <h3>Restaurante</h3>
-                        <p>Descubre una variedad de platillos gourmet en nuestro restaurante de clase mundial.</p>
-                        <p><strong>Precio: Variable según el menú</strong></p>
-                    </div>
-                </div>
-
-                <!-- Servicio Spa -->
-                <div class="service">
-                    <img src="spa.jpg" alt="Spa" class="service-img">
-                    <div class="service-info">
-                        <h3>Spa</h3>
-                        <p>Renueva tu energía con nuestros tratamientos de spa diseñados para revitalizarte por completo.</p>
-                        <p><strong>Precio: $40 por sesión</strong></p>
-                    </div>
-                </div>
-
-                <!-- Servicio Bar -->
-                <div class="service">
-                    <img src="bar.jpg" alt="Bar" class="service-img">
-                    <div class="service-info">
-                        <h3>Bar</h3>
-                        <p>Relájate con una bebida en nuestro bar, un lugar perfecto para socializar y disfrutar de la noche.</p>
-                        <p><strong>Precio: Variable según el menú</strong></p>
-                    </div>
-                </div>
-
-                <!-- Servicio Gimnasio -->
-                <div class="service">
-                    <img src="gimnasio.jpg" alt="Gimnasio" class="service-img">
-                    <div class="service-info">
-                        <h3>Gimnasio</h3>
-                        <p>Mantén tu rutina de ejercicios en nuestro gimnasio totalmente equipado.</p>
-                        <p><strong>Precio: $5 por día</strong></p>
-                    </div>
-                </div>
-
-                <!-- Servicio Comida en la Habitación -->
-                <div class="service">
-                    <img src="room_service.jpg" alt="Comida en la Habitación" class="service-img">
-                    <div class="service-info">
-                        <h3>Comida en la Habitación</h3>
-                        <p>Disfruta de la comodidad de nuestro servicio de comida en la habitación, disponible las 24 horas.</p>
-                        <p><strong>Precio: $3 por pedido</strong></p>
-                    </div>
-                </div>
-
-                <!-- Servicio Sala de Entretenimiento -->
-                <div class="service">
-                    <img src="sala_entretenimiento.jpg" alt="Sala de Entretenimiento" class="service-img">
-                    <div class="service-info">
-                        <h3>Sala de Entretenimiento</h3>
-                        <p>Pasa un buen rato en nuestra sala de entretenimiento, equipada con juegos y más.</p>
-                        <p><strong>Precio: $10 por día</strong></p>
-                    </div>
-                </div>
-
+                <h2>Nuestros Servicios Adicionales</h2>
+                <div id="servicesContainer" class="services-grid"></div> <!-- Cambié 'rooms-grid' por 'services-grid' -->
             </div>
         </section>
     </main>
@@ -136,6 +52,6 @@
         </div>
     </footer>
 
-    <script src="scripts/servicios_dodo.js"></script>
+    <script src="scripts/servicios_dodo.js"></script> <!-- Asegúrate de enlazar el archivo JS correcto -->
 </body>
 </html>
